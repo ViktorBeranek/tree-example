@@ -1,0 +1,30 @@
+extensions:
+	console: Contributte\Console\DI\ConsoleExtension(true)
+
+services:
+	src.command.printTreeCommand:
+		factory: Src\Command\Print\PrintTreeCommand
+
+	src.command.moveCommand:
+		factory: Src\Command\Move\MoveCommand
+
+	src.command.sumValueCommand:
+		factory: Src\Command\SumValue\SumValueCommand
+
+	src.model.csvInitializer:
+		factory: Src\Model\CsvInitializer
+
+	src.command.treePrinter:
+		factory: Src\Command\TreePrinter
+
+	src.model.nodeMover:
+		factory: Src\Model\NodeMover
+
+	src.model.nodeValueSumCounter:
+		factory: Src\Model\NodeValueSumCounter
+
+	src.model.nodeExporter:
+		factory: Src\Model\NodeExporter
+
+	src.model.nodeRepository:
+		factory: Src\Model\NodeRepository

@@ -1,0 +1,9 @@
+version: '3'
+
+services:
+  php-fpm:
+    build: .
+    volumes:
+      - ./:/var/www/html
+    expose:
+      - 9000
