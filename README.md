@@ -18,7 +18,7 @@ App has 3 action _print tree_, _move node tree_ and _node sum value_
 
 **Command**
 
-``docker-compose exec php-fpm bin/console tree:print --input=tree.csv``
+``docker-compose run php-fpm bin/console tree:print --input=tree.csv``
 
 
 ## Move tree
@@ -34,7 +34,7 @@ App has 3 action _print tree_, _move node tree_ and _node sum value_
 
 **Command**
 
-``docker-compose exec php-fpm bin/console tree:move --input tree.csv --id=31 --newParent=13 --output=output.csv``
+``docker-compose run php-fpm bin/console tree:move --input tree.csv --id=31 --newParent=13 --output=output.csv``
 
 
 ## Sum tree
@@ -48,7 +48,7 @@ App has 3 action _print tree_, _move node tree_ and _node sum value_
 
 **Command**
 
-``docker-compose exec php-fpm bin/console tree:sum --input tree.csv --id=31``
+``docker-compose run php-fpm bin/console tree:sum --input tree.csv --id=31``
 
 
 **Run tests**
