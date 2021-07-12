@@ -53,5 +53,5 @@ App has 3 action _print tree_, _move node tree_ and _node sum value_
 
 **Run tests**
 
-``docker-compose exec -T php-fpm vendor/bin/phpunit tests/Unit
+``docker-compose run -T php-fpm vendor/bin/phpunit tests/Unit
 ``
